@@ -20,6 +20,12 @@ const Header = () => (
 	</header>
 )
 
+const Loader = () => (
+	<div id="loader-wrapper">
+		<div id="loader"></div>
+	</div>
+)
+
 const App = () => (
 	<>
 		<Header />
