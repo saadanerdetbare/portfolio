@@ -1,8 +1,8 @@
 import React from 'react';
-import { Grid, Col, Row } from 'react-styled-flexboxgrid'
+import { Grid, Col, Row } from 'react-styled-flexboxgrid';
+import { ThemeProvider } from 'styled-components';
+import { appTheme } from 'styleComponents';
 import 'App.css';
-
-
 
 const Navbar = () => (
 	<div id="navbar">
@@ -36,23 +36,25 @@ const Loader = () => (
 const App = () => (
 	<>
 		<Navbar />
-		<Grid>
-			<Row>
-				<Col xs={12} md={12} lg={12}>
-					<Welcome />
-				</Col>
-			</Row>
-			<Row>
-				<Col xs={12} md={12} lg={12}>
-					<Projects />
-				</Col>
-			</Row>
-			<Row>
-				<Col xs={12} md={12} lg={12}>
-					<Contact />
-				</Col>
-			</Row>
-		</Grid>
+		<ThemeProvider theme={appTheme}>
+			<Grid fluid={true}>
+				<Row>
+					<Col xs={12} md={12} lg={12}>
+						<Welcome />
+					</Col>
+				</Row>
+				<Row>
+					<Col xs={12} md={12} lg={12}>
+						<Projects />
+					</Col>
+				</Row>
+				<Row>
+					<Col xs={12} md={12} lg={12}>
+						<Contact />
+					</Col>
+				</Row>
+			</Grid>
+		</ThemeProvider>
 	</>
 )
 
