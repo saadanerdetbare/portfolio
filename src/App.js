@@ -1,24 +1,31 @@
 import React from 'react';
-import logo from 'logo.svg';
+import { Grid, Col, Row } from 'react-styled-flexboxgrid'
 import 'App.css';
 
 
-const Header = () => (
-	<header className="App-header">
-		<img src={logo} className="App-logo" alt="logo" />
-		<p>
-			edit <code>src/App.js</code> and save to reload.
-		</p>
-		<a
-			className="App-link"
-			href="https://reactjs.org"
-			target="_blank"
-			rel="noopener noreferrer"
-		>
-			Learn React
-		</a>
-	</header>
+
+const Navbar = () => (
+	<div id="navbar">
+		<a href="#welcome-section">About</a>
+		<a href="#projects">Projects</a>
+		<a href="#contact">Contact</a>
+	</div>
 )
+
+const Welcome = () => (
+	<div id="welcome-section">
+
+	</div>
+)
+
+const Projects = () => (
+	<div id="projects"></div>
+)
+
+const Contact = () => (
+	<div id="contact"></div>
+)
+
 
 const Loader = () => (
 	<div id="loader-wrapper">
@@ -28,7 +35,24 @@ const Loader = () => (
 
 const App = () => (
 	<>
-		<Header />
+		<Navbar />
+		<Grid>
+			<Row>
+				<Col xs={12} md={12} lg={12}>
+					<Welcome />
+				</Col>
+			</Row>
+			<Row>
+				<Col xs={12} md={12} lg={12}>
+					<Projects />
+				</Col>
+			</Row>
+			<Row>
+				<Col xs={12} md={12} lg={12}>
+					<Contact />
+				</Col>
+			</Row>
+		</Grid>
 	</>
 )
 
