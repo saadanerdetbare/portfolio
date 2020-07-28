@@ -1,6 +1,7 @@
+import styled from 'styled-components';
+
 export const appTheme = {
 	flexboxgrid: {
-		// Defaults
 		gridSize: 12, // columns
 		gutterWidth: 1, // rem
 		outerMargin: 0, // rem
@@ -18,3 +19,51 @@ export const appTheme = {
 		}
 	}
 }
+
+export const Nav = styled.div`
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: flex-end;
+`;
+
+export const WelcomeSection = styled.div`
+  background-color: #e74c3c;
+  height: 60vh;
+  width: 100vw;
+  padding-top: 40vh;
+`;
+
+export const ProjectsSection = styled.div`
+  background-color: green;
+  width: 100vw;
+  height: 100vh;
+`;
+
+export const ContactSection = styled.div`
+  background-color: blue;
+  width: 100vw;
+  height: 60vh;
+  padding-top: 40vh;
+`;
+
+export const NavButton = styled.button`
+  cursor: pointer;
+  background: transparent;
+  font-weight: bold;
+  border-radius: 3px;
+  color: black;
+  border: 2px solid blue;
+  margin: 0 1em;
+  padding: 0.25em 1em;
+  height: 4vh;
+  transition: 0.5s all ease-out;
+
+  &:hover {
+    background-color: palevioletred;
+    color: white;
+  }
+`;

@@ -1,29 +1,57 @@
 import React from 'react';
 import { Grid, Col, Row } from 'react-styled-flexboxgrid';
 import { ThemeProvider } from 'styled-components';
-import { appTheme } from 'styleComponents';
+import { appTheme, NavButton, Nav, WelcomeSection, ProjectsSection, ContactSection } from 'styleComponents';
 import 'App.css';
 
 const Navbar = () => (
-	<div id="navbar">
-		<a href="#welcome-section">About</a>
-		<a href="#projects">Projects</a>
-		<a href="#contact">Contact</a>
-	</div>
+	<Nav id="navbar">
+		<NavButton>
+			<a href="#welcome-section">About</a>
+		</NavButton>
+		<NavButton>
+			<a href="#projects">Projects</a>
+		</NavButton>
+		<NavButton>
+			<a href="#contact">Contact</a>
+		</NavButton>
+	</Nav>
 )
 
 const Welcome = () => (
-	<div id="welcome-section">
-
-	</div>
+	<WelcomeSection id="welcome-section">
+		<Grid>
+			<Row></Row>
+			<Row middle="xs">
+				<Col xs />
+				<Col xs>
+					<h1>En header</h1>
+				</Col>
+				<Col xs />
+			</Row>
+			<Row></Row>
+		</Grid>
+	</WelcomeSection>
 )
 
 const Projects = () => (
-	<div id="projects"></div>
+	<ProjectsSection id="projects"></ProjectsSection>
 )
 
 const Contact = () => (
-	<div id="contact"></div>
+	<ContactSection id="contact">
+		<Grid>
+			<Row></Row>
+			<Row middle="xs">
+				<Col xs />
+				<Col xs>
+					<h1>En header</h1>
+				</Col>
+				<Col xs />
+			</Row>
+			<Row></Row>
+		</Grid>
+	</ContactSection>
 )
 
 
@@ -35,21 +63,21 @@ const Loader = () => (
 
 const App = () => (
 	<>
-		<Navbar />
+		<Navbar id="navbar" />
 		<ThemeProvider theme={appTheme}>
 			<Grid fluid={true}>
 				<Row>
-					<Col xs={12} md={12} lg={12}>
+					<Col xs>
 						<Welcome />
 					</Col>
 				</Row>
 				<Row>
-					<Col xs={12} md={12} lg={12}>
+					<Col xs>
 						<Projects />
 					</Col>
 				</Row>
 				<Row>
-					<Col xs={12} md={12} lg={12}>
+					<Col xs>
 						<Contact />
 					</Col>
 				</Row>
