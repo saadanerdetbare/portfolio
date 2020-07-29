@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Grid, Col, Row } from 'react-styled-flexboxgrid';
 import { ThemeProvider } from 'styled-components';
 import { Twitter, Github } from '@styled-icons/boxicons-logos'
