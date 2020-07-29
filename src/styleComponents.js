@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export const appTheme = {
 	flexboxgrid: {
@@ -66,13 +66,13 @@ const Button = styled.button`
     background-color: palevioletred;
     color: white;
   }
+
 `;
 
 export const NavButton = styled(Button)`
 	height: 4vh;
 
   &:hover {
-
   }
 `;
 
@@ -81,6 +81,63 @@ export const SocialButton = styled(Button)`
   border: 2px solid black;
 
   &:hover {
+  }
+`;
 
+const spin = keyframes`
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+`;
+
+export const LoaderWrapper = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+`;
+
+export const LoaderInner = styled.div`
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #3498db;
+  animation: ${spin} 2s linear infinite;
+
+  &:before {
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	right: 5px;
+	bottom: 5px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #e74c3c;
+	animation: ${spin} 3s linear infinite;
+  }
+
+  &:after {
+	content: "";
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	right: 15px;
+	bottom: 15px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #f9c922;
+	animation: ${spin} 1.5s linear infinite;
   }
 `;
