@@ -106,7 +106,6 @@ const App = () => (
 				</Row>
 			</Grid>
 		</ThemeProvider>
-		<Loader />
 	</>
 )
 

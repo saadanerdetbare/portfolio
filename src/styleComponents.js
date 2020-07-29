@@ -67,13 +67,13 @@ const Button = styled.button`
     background-color: palevioletred;
     color: white;
   }
+
 `;
 
 export const NavButton = styled(Button)`
 	height: 4vh;
 
   &:hover {
-
   }
 `;
 
@@ -81,35 +81,16 @@ export const SocialButton = styled(Button)`
 
   border: 2px solid black;
 
-
   &:hover {
-
-  }
-`;
-
-const webkitSpin = keyframes`
-  0% {
-    -webkit-transform: rotate(0deg); /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: rotate(0deg); /* IE 9 */
-    transform: rotate(0deg); /* Firefox 16+, IE 10+, Opera */
-  }
-  100% {
-    -webkit-transform: rotate(360deg); /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: rotate(360deg); /* IE 9 */
-    transform: rotate(360deg); /* Firefox 16+, IE 10+, Opera */
   }
 `;
 
 const spin = keyframes`
   0% {
-    -webkit-transform: rotate(0deg); /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: rotate(0deg); /* IE 9 */
-    transform: rotate(0deg); /* Firefox 16+, IE 10+, Opera */
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg); /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: rotate(360deg); /* IE 9 */
-    transform: rotate(360deg); /* Firefox 16+, IE 10+, Opera */
+    transform: rotate(360deg);
   }
 `;
 
@@ -133,8 +114,7 @@ export const LoaderInner = styled.div`
   border-radius: 50%;
   border: 3px solid transparent;
   border-top-color: #3498db;
-  -webkit-animation: ${webkitSpin} 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
-  animation: ${spin} 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+  animation: ${spin} 2s linear infinite;
 
   &:before {
 	content: "";
@@ -146,8 +126,7 @@ export const LoaderInner = styled.div`
 	border-radius: 50%;
 	border: 3px solid transparent;
 	border-top-color: #e74c3c;
-	-webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
-	animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+	animation: ${spin} 3s linear infinite;
   }
 
   &:after {
@@ -160,7 +139,6 @@ export const LoaderInner = styled.div`
 	border-radius: 50%;
 	border: 3px solid transparent;
 	border-top-color: #f9c922;
-	-webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
-	animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+	animation: ${spin} 1.5s linear infinite;
   }
 `;
