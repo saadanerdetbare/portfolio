@@ -5,7 +5,7 @@ import { Twitter, Github } from '@styled-icons/boxicons-logos'
 import { FreeCodeCamp } from '@styled-icons/fa-brands'
 import * as Scroll from 'react-scroll';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-import { appTheme, NavButton, Nav, WelcomeSection, ProjectsSection, ContactSection, SocialButton } from 'styleComponents';
+import { appTheme, NavButton, Nav, WelcomeSection, ProjectsSection, ContactSection, SocialButton, LoaderWrapper, LoaderInner } from 'styleComponents';
 import 'App.css';
 
 const Navbar = () => (
@@ -79,9 +79,9 @@ const Contact = () => (
 
 
 const Loader = () => (
-	<div id="loader-wrapper">
-		<div id="loader"></div>
-	</div>
+	<LoaderWrapper>
+		<LoaderInner />
+	</LoaderWrapper>
 )
 
 const App = () => (
@@ -106,6 +106,7 @@ const App = () => (
 				</Row>
 			</Grid>
 		</ThemeProvider>
+		<Loader />
 	</>
 )
 
