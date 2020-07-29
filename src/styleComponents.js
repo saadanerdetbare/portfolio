@@ -50,7 +50,7 @@ export const ContactSection = styled.div`
   padding-top: 40vh;
 `;
 
-export const NavButton = styled.button`
+const Button = styled.button`
   cursor: pointer;
   background: transparent;
   font-weight: bold;
@@ -59,11 +59,29 @@ export const NavButton = styled.button`
   border: 2px solid blue;
   margin: 0 1em;
   padding: 0.25em 1em;
-  height: 4vh;
+
   transition: 0.5s all ease-out;
 
   &:hover {
     background-color: palevioletred;
     color: white;
+  }
+`;
+
+export const NavButton = styled(Button)`
+	height: 4vh;
+
+  &:hover {
+
+  }
+`;
+
+export const SocialButton = styled(Button)`
+
+  border: 2px solid black;
+
+
+  &:hover {
+
   }
 `;

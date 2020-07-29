@@ -24,10 +24,6 @@ h1 {
   text-align: center;
 }
 
-#navbar a {
-  text-decoration: none;
-}
-
 /*loader*/
 #loader-wrapper {
   position: fixed;

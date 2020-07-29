@@ -9,8 +9,10 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1",
+    "react-scroll": "^1.8.0",
     "react-styled-flexboxgrid": "^3.2.1",
-    "styled-components": "^5.1.1"
+    "styled-components": "^5.1.1",
+    "styled-icons": "^10.13.0"
   },
   "resolutions": {
     "styled-components": "^5"
