@@ -30,7 +30,6 @@ export const Nav = styled.div`
   justify-content: flex-end;
 `;
 
-
 export const Section = styled.div`
   width: 100%;
 `;
