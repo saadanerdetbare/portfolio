@@ -30,22 +30,24 @@ export const Nav = styled.div`
   justify-content: flex-end;
 `;
 
-export const WelcomeSection = styled.div`
+
+export const Section = styled.div`
+  width: 100%;
+`;
+
+export const WelcomeSection = styled(Section)`
   background-color: #e74c3c;
   height: 60vh;
-  width: 100vw;
   padding-top: 40vh;
 `;
 
-export const ProjectsSection = styled.div`
+export const ProjectsSection = styled(Section)`
   background-color: green;
-  width: 100vw;
   height: 100vh;
 `;
 
-export const ContactSection = styled.div`
+export const ContactSection = styled(Section)`
   background-color: blue;
-  width: 100vw;
   height: 60vh;
   padding-top: 40vh;
 `;
@@ -59,7 +61,6 @@ const Button = styled.button`
   border: 2px solid blue;
   margin: 0 1em;
   padding: 0.25em 1em;
-
   transition: 0.5s all ease-out;
 
   &:hover {
@@ -79,7 +80,6 @@ export const NavButton = styled(Button)`
 export const SocialButton = styled(Button)`
 
   border: 2px solid black;
-
 
   &:hover {
 

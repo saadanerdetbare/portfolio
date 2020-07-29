@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Grid, Col, Row } from 'react-styled-flexboxgrid';
 import { ThemeProvider } from 'styled-components';
 import { Twitter, Github } from '@styled-icons/boxicons-logos'
@@ -10,13 +10,13 @@ import 'App.css';
 
 const Navbar = () => (
 	<Nav id="navbar">
-		<Link to="welcome-section" spy={true} smooth={true} offset={0} duration={500} >
+		<Link activeClass="active" to="welcome-section" spy={true} smooth={true} offset={0} duration={500} >
 			<NavButton>About</NavButton>
 		</Link>
-		<Link to="projects" spy={true} smooth={true} offset={0} duration={500} >
+		<Link activeClass="active" to="projects" spy={true} smooth={true} offset={0} duration={500} >
 			<NavButton>Projects</NavButton>
 		</Link>
-		<Link to="contact" spy={true} smooth={true} offset={0} duration={500} >
+		<Link activeClass="active" to="contact" spy={true} smooth={true} offset={0} duration={500} >
 			<NavButton>Contact</NavButton>
 		</Link>
 		<a href="#contact">
@@ -59,17 +59,17 @@ const Contact = () => (
 			<Row>
 				<Col xs>
 					<a href="https://twitter.com/jakob_dahl" target="_blank" rel="noopener noreferrer">
-						<SocialButton><Twitter size="36" /> Me on Twitter</SocialButton>
+						<SocialButton><Twitter size="34" /> Me on Twitter</SocialButton>
 					</a>
 				</Col>
 				<Col xs>
 					<a href="https://www.freecodecamp.org/saadanerdetbare" target="_blank" rel="noopener noreferrer">
-						<SocialButton><FreeCodeCamp size="36" /> My profile on freeCodeCamp</SocialButton>
+						<SocialButton><FreeCodeCamp size="34" /> My profile on freeCodeCamp</SocialButton>
 					</a>
 				</Col>
 				<Col xs>
 					<a id="profile-link" href="https://github.com/saadanerdetbare" target="_blank" rel="noopener noreferrer">
-						<SocialButton><Github size="36" /> Visit me on Github</SocialButton>
+						<SocialButton><Github size="34" /> Visit me on Github</SocialButton>
 					</a>
 				</Col>
 			</Row>
