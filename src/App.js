@@ -32,7 +32,9 @@ const Welcome = () => (
 			<Row middle="xs">
 				<Col xs />
 				<Col xs>
-					<h1>En header</h1>
+					<h1>Hi, I am Jakob</h1>
+					<h3>An aspiring web developer</h3>
+					<p>This is my personal portfolio</p>
 				</Col>
 				<Col xs />
 			</Row>
@@ -51,7 +53,7 @@ const Projects = () => (
 				</Col>
 				<Col xs></Col>
 			</Row>
-			<Row>
+			<Row around="xs">
 				<Col xs><Iframe url="https://aarhusnordhavn.dk/"
 					width="350vw"
 					height="350vh"
@@ -74,6 +76,23 @@ const Projects = () => (
 					display="initial"
 					position="relative" /></Col>
 			</Row>
+			<Row around="xs">
+				<Col xs>
+					<a href="https://aarhusnordhavn.dk/" target="_blank" rel="noopener noreferrer">
+						<SocialButton className="projectlink">Small website for a danish yacht club</SocialButton>
+					</a>
+				</Col>
+				<Col xs>
+					<a href="https://techdoc.jakobdahl.me/" target="_blank" rel="noopener noreferrer">
+						<SocialButton className="projectlink">Build a Technical Documentation Page</SocialButton>
+					</a>
+				</Col>
+				<Col xs>
+					<a href="https://jakobdahl.me/" target="_blank" rel="noopener noreferrer">
+						<SocialButton className="projectlink">Personal website work in progress</SocialButton>
+					</a>
+				</Col>
+			</Row>
 		</Grid>
 	</ProjectsSection>
 )
@@ -85,7 +104,7 @@ const Contact = () => (
 			<Row middle="xs">
 				<Col xs />
 				<Col xs>
-					<h1>En header</h1>
+					<h1>Contact me on one of these 3 platforms</h1>
 				</Col>
 				<Col xs />
 			</Row>
