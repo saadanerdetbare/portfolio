@@ -32,21 +32,20 @@ export const Nav = styled.div`
 
 export const Section = styled.div`
   width: 100%;
+  background-color: #A9A9A9;
 `;
 
 export const WelcomeSection = styled(Section)`
-  background-color: #e74c3c;
   height: 60vh;
   padding-top: 40vh;
 `;
 
 export const ProjectsSection = styled(Section)`
-  background-color: green;
+  background-color: #5F9EA0;
   height: 100vh;
 `;
 
 export const ContactSection = styled(Section)`
-  background-color: blue;
   height: 60vh;
   padding-top: 40vh;
 `;
@@ -63,7 +62,7 @@ const Button = styled.button`
   transition: 0.5s all ease-out;
 
   &:hover {
-    background-color: palevioletred;
+    background-color: #B0C4DE;
     color: white;
   }
 
