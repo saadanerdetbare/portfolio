@@ -21,6 +21,7 @@ const Navbar = () => (
 		</Link>
 		<a href="#contact">
 			<NavButton>Test button</NavButton>
+
 		</a>
 	</Nav>
 )
